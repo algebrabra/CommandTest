@@ -3,7 +3,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showNumber(i)
 })
 input.onButtonPressed(Button.B, function () {
-    i = -1
+    i += -1
     basic.showNumber(i)
 })
 let i = 0
