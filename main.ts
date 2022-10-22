@@ -11,10 +11,11 @@ input.onButtonPressed(Button.B, function () {
     resetTimer()
 })
 function resetTimer () {
-    timer = 1000
+    timer = 3000
 }
 let timer = 0
 let i = 0
+music.setVolume(200)
 let state = 0
 resetTimer()
 i = 0
@@ -23,7 +24,6 @@ basic.forever(function () {
     timer += -100
     basic.pause(100)
     if (timer == 0) {
-        basic.showIcon(IconNames.TShirt)
-        resetTimer()
+        basic.showString("SHIT")
     }
 })
